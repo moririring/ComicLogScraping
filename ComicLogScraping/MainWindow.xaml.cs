@@ -30,6 +30,7 @@ namespace ComicLogScraping
         static private readonly string Amazon = "http://www.amazon.co.jp";
         static private readonly string AmazonJumpFirst = "/s/ref=sr_nr_p_n_feature_three_br_1?rh=n%3A465392%2Cn%3A%21465610%2Cn%3A466280%2Cn%3A2278488051%2Cp_n_feature_three_browse-bin%3A2128968051&bbn=2278488051&ie=UTF8&qid=1371811066&rnid=2128664051";
         //http://www.amazon.co.jp/gp/search/other?redirect=true&rh=n%3A465392%2Cn%3A%21465610%2Cn%3A466280%2Cn%3A2278488051&bbn=2278488051&pickerToList=lbr_three_browse-bin&ie=UTF8&qid=1372933469&rd=1
+        
         private XDocument GetXDocumentFromHtml(string html)
         {
             using (var sgml = new SgmlReader() { Href = html })
